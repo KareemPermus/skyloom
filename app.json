@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0EA5E9",
+        "foregroundImage": "./assets/adaptive-icon.png"
+      },
+      "package": "com.myndlab.weather_now",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "{{EAS_PROJECT_ID}}"
+      }
+    },
+    "icon": "./assets/icon.png",
+    "ios": {
+      "bundleIdentifier": "com.myndlab.weathernow",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Allow Weather Now to use your location to show local weather."
+      },
+      "supportsTablet": true
+    },
+    "name": "Weather Now",
+    "orientation": "portrait",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#ffffff",
+          "icon": "./assets/notification-icon.png"
+        }
+      ]
+    ],
+    "scheme": "weather-now",
+    "slug": "weather-now",
+    "splash": {
+      "backgroundColor": "#0EA5E9",
+      "image": "./assets/splash.png",
+      "resizeMode": "contain"
+    },
+    "userInterfaceStyle": "automatic",
+    "version": "1.0.0",
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
